@@ -7,6 +7,9 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         CalculateColumnTotalTest.class,
         CalculateRowTotalTest.class,
+        CreateNumberArrayTest.class,
+        CreateNumberArray2DTest.class,
+        GetCumulativePercentagesTest.class
 })
 public class DataUtilitiesJunitTestSuite {
 }
