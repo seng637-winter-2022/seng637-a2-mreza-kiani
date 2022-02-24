@@ -18,12 +18,12 @@ public class IntersectMethodTest {
     }
 
     @Test
-    public void aFullyIntersectionForNumbers() {
+    public void aFullyIntersectionForSmallerNumbers() {
         assertTrue("[-0.5, +0.5] has intersection with [-1, +1]", range.intersects(-0.5, 0.5));
     }
 
     @Test
-    public void aFullyIntersectionForRange() {
+    public void aFullyIntersectionForLargerNumbers() {
         assertTrue("[-2, +2] has intersection with [-1, +1]", range.intersects(-2, 2));
     }
 
