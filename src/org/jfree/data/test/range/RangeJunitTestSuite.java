@@ -7,6 +7,9 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         CombineIgnoringNaNMethodTest.class,
         IntersectMethodTest.class,
+        ExpandToIncludeTest.class,
+        isNaNRangeTest.class,
+        ShiftTest.class
 })
 public class RangeJunitTestSuite {
 }

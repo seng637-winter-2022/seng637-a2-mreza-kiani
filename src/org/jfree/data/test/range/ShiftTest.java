@@ -1,11 +1,11 @@
-package org.jfree.data.test;
+package org.jfree.data.test.range;
 
 import static org.junit.Assert.*;
 
 import org.jfree.data.Range;
 import org.junit.*;
 
-public class RangeShiftTest{
+public class ShiftTest {
 	
 	@BeforeClass
     public static void setUpBeforeClass() {
