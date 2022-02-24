@@ -6,7 +6,7 @@ import org.junit.*;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
-public class RangeCombineIgnoringNaNMethodTest {
+public class CombineIgnoringNaNMethodTest {
 
     @BeforeClass
     public static void setUpBeforeClass() {

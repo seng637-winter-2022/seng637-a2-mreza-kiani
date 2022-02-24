@@ -5,7 +5,7 @@ import org.junit.*;
 
 import static org.junit.Assert.*;
 
-public class RangeIntersectMethodTest {
+public class IntersectMethodTest {
     private Range range;
 
     @BeforeClass
