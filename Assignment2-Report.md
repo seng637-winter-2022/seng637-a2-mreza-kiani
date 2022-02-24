@@ -37,7 +37,11 @@ you have explained in the test strategy section //above
 
 # 4 How the team work/effort was divided and managed
 
-Text…
+We divided the methods into three parts (3, 4, 3), and after planning the tests, we wrote our test cases.
+Then, each of us double-checked the test cases of the others.
+In the end, we added 2 test suites for running the whole tests for a class together.
+Finally, we answered all of the questions of the report separately and merged them at the end.
+It's worth mentioning that we used Discord for our communication and Zoom meeting for capturing the demo. 
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
