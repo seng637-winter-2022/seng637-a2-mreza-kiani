@@ -25,7 +25,30 @@ test suits that we wrote for each class.
 
 # 2 Detailed description of unit test strategy
 
-// including the input partitions you have designed
+First we ran the JFreeChart demo to get familiar with the library and its features. Then we took a look at the Javadoc
+for the two Range & DataUtilities class, and tried to know their methods. For each method, we tried to use specific
+technique to do black box testing. The technique we used are:
+
+* Equivalence class testing
+* Boundary value analysis
+* Robustness testing
+* Worst case testing
+
+By using these techniques, we tried to cover all the expected behaviour of a method. In some cases, more specifically
+for DataUtilities class, we used mocking to mimic the behaviour of a not-implemented or complex class, so then we were
+able to continue our unit testing. But there was a main disadvantage of using a mock object:
+It is very coupled with the unit tests. In fact, sometimes the unit test is working based on the expected behaviour of
+our mock. And if we use mocks more than it's necessary, our testing maintenance would go rise.
+
+Finally, we tested 5 methods of Range class and 5 methods of DataUtilities class. You can see specific description for
+each one in the table bellow:
+
+| Class         |     Method Name      |                                                      Description                                                       |                                                                                                                                                                                                                                                   Testing Strategy                                                                                                                                                                                                                                                    |
+|:--------------|:--------------------:|:----------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Range         |      intersects      |                   Returns true if the range intersects with the specified range, and false otherwise                   |                                                                       We chose Equivalence class testing and boundary value analysis and worst case testing for this method.<br><br> For Range(-1, 1):<br> intersects(-2, -1) was used for boundary testing.<br>intersects(Double.NaN, Double.NaN), (0.5, -0.5) for worst case testing.<br>And these values for Equivalence testing: (-0.5, 0.5), (-2, 2), (-1.5, 0.5), (-0.5, 1.5), (-2, -1.5)                                                                       |
+| Range         |  combineIgnoringNaN  | Returns a new range that spans both range1 and range2. This method has a special handling to ignore Double.NaN values. |                                                                 We used Equivalence class testing and robustness testing for this method. Because it was a combine method that ignores null, all possible formats were expected.<br><br>These inputs were tested for ECT:<br>Range(-1, 1), Range(1, 2)<br>Range(-1, 1.5), Range(0.5, 2)<br>Range(-1, 0.5), Range(1.5, 2)<br>and (null, null), (r, null), (null, r) were tested for robustness testing                                                                 |
+| DataUtilities | calculateColumnTotal |                       Returns the total of the values in one column of the supplied data table.                        | For this method, we used mocking for different behaviour of Values2D. Then we used Equivalence class testing and robustness testing.<br><br>For ECT, we used values with different number of rows, e.g. 0, 1, 2 to see if it works well or not. For rows 2, we also checked different index of the summation. <br> For robustness testing, we passed some null as part or whole of the values to see if we receive the suitable exception or not. Also, we used index lower than zero and larger than number of rows. |
+| DataUtilities |  calculateRowTotal   |                         Returns the total of the values in one row of the supplied data table.                         |                                                                                                                                                                                   We did the same thing here in compared with calculateColumnTotal. The different is that here we controlled the tests using different height size.                                                                                                                                                                                   |
 
 # 3 Test cases developed
 
