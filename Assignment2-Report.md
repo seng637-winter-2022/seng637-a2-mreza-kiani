@@ -29,11 +29,7 @@ test suits that we wrote for each class.
 
 # 3 Test cases developed
 
-Text…
-
-// write down the name of the test methods and classes. Organize the based on
-the source code method // they test. identify which tests cover which partitions
-you have explained in the test strategy section //above
+For this section, please refer to the [Excel](https://github.com/seng637-winter-2022/seng637-a2-mreza-kiani/blob/main/SENG637-A2.pptx) file located the main directory.
 
 # 4 How the team work/effort was divided and managed
 
