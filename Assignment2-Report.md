@@ -8,6 +8,12 @@
 | Mohammad Reza Kianifar |     |
 | Muhammad Raihan        |     |
 
+# Link of demo video
+
+[Video Link](https://uofc-my.sharepoint.com/:v:/g/personal/shahryar_soltanpour_ucalgary_ca/EXWPxt-PmldEiKqqr3gGE1EBPMeAtTKsmYDa1GJDswXPjQ?e=UUwOgj)
+
+It works for everyone with logged-in university account on outlook. Please [tell us](mailto:mohammadreza.kianifa@ucalgary.ca) if you had any problem.
+
 # 1 Introduction
 
 In this assignment, we want to test 5 methods for 2 classes of the JFreeChart library.
