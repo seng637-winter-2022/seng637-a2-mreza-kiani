@@ -52,6 +52,16 @@ public class IntersectMethodTest {
         assertFalse("[-2, -1] has a marginal intersection with [-1, +1]", range.intersects(-2, -1));
     }
 
+    @Test
+    public void aPartialNaNTest() {
+        assertFalse("[null, -1] has no intersection with [-1, +1]", range.intersects(Double.NaN, 1));
+    }
+
+    @Test
+    public void aFullyNaNTest() {
+        assertFalse("[null, null] has no intersection with [-1, +1]", range.intersects(Double.NaN, Double.NaN));
+    }
+
     @After
     public void tearDown() {
     }

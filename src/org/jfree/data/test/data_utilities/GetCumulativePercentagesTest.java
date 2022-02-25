@@ -46,10 +46,9 @@ public class GetCumulativePercentagesTest {
         KeyedValues actual = DataUtilities.getCumulativePercentages(values);
 
         DefaultKeyedValues expected = new DefaultKeyedValues();
-        expected.addValue(new Integer(0), 1);
+        expected.addValue(Integer.valueOf(0), 1);
 
-        assertEquals("Asserting for one element in keyedValues",
-                expected, actual);
+        assertEquals("Asserting for one element in keyedValues", expected, actual);
     }
 
     //Key values are:
@@ -80,9 +79,9 @@ public class GetCumulativePercentagesTest {
         KeyedValues actual = DataUtilities.getCumulativePercentages(values);
 
         DefaultKeyedValues expected = new DefaultKeyedValues();
-        expected.addValue(new Integer(1), 4.0 / 15.0);
-        expected.addValue(new Integer(2), (4.0 + 5.0) / 15.0);
-        expected.addValue(new Integer(3), (4.0 + 5.0 + 6.0) / 15.0);
+        expected.addValue(Integer.valueOf(1), 4.0 / 15.0);
+        expected.addValue(Integer.valueOf(2), (4.0 + 5.0) / 15.0);
+        expected.addValue(Integer.valueOf(3), (4.0 + 5.0 + 6.0) / 15.0);
 
         assertEquals("Asserting for multiple elements in keyedValues",
                 expected, actual);
@@ -116,9 +115,9 @@ public class GetCumulativePercentagesTest {
         KeyedValues actual = DataUtilities.getCumulativePercentages(values);
 
         DefaultKeyedValues expected = new DefaultKeyedValues();
-        expected.addValue(new Integer(1), 4.0 / 10.0);
-        expected.addValue(new Integer(2), (4.0) / 10.0);
-        expected.addValue(new Integer(3), (4.0 + 6.0) / 10.0);
+        expected.addValue(Integer.valueOf(1), 4.0 / 10.0);
+        expected.addValue(Integer.valueOf(2), (4.0) / 10.0);
+        expected.addValue(Integer.valueOf(3), (4.0 + 6.0) / 10.0);
 
         assertEquals("Asserting for null in values in keyedValues",
                 expected, actual);
