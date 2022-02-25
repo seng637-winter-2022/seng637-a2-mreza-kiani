@@ -29,7 +29,7 @@ test suits that we wrote for each class.
 
 # 3 Test cases developed
 
-For this section, please refer to the [Excel](https://github.com/seng637-winter-2022/seng637-a2-mreza-kiani/blob/main/SENG637-A2.pptx) file located the main directory.
+For this section, please refer to the [Excel](https://github.com/seng637-winter-2022/seng637-a2-mreza-kiani/blob/main/Test%20Cases.xlsx) file located the main directory.
 
 # 4 How the team work/effort was divided and managed
 
