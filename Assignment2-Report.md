@@ -76,8 +76,8 @@ It's worth mentioning that we used Discord for our communication and Zoom meetin
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
-Text…
+The main difficulties we encountered were with the remote learning, having to do the work individually online instead of being able to do it in person. We also had minor issues trying to figure out how to robustness test with JUnit where we can see if a method successfully threw an exception. However after a little bit of research we were able to overcome the problem and we learned to properly handle exceptions in test cases. 
 
 # 6 Comments/feedback on the lab itself
 
-Text…
+This lab was fantastic as it allowed us to experience and get accustomed to JUnit testing as well as in utilizing Mockery classes. It was a great learning experience for us and we believe it will be greatly beneficial in the future. It will definitely come in handy when we need to test our projects in the future. We appreciate this opportunity to learn
